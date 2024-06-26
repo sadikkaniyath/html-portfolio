@@ -4,25 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            padding-right: 25%;
+            padding-left: 25%;
+            text-align: center;
+        }
+        .top-left-button {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    padding: 10px 20px;
+    background-color: #f0f8ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.top-left-button:hover {
+    background-color: white;
+}
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        h4, h3 {
+            margin: 0;
+        }
+
+        .contact-item {
+            background-color: #e0f7fa;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            cursor: pointer; /* Change cursor to pointer on hoverable items */
+            transition: background-color 0.3s ease; /* Smooth transition for background color change */
+        }
+
+        .contact-item:hover {
+            background-color: #b2ebf2; /* Lighter background color on hover */
+        }
+
+        .whatsapp-logo {
+            width: 30px; /* Adjust size as needed */
+            height: 30px; /* Adjust size as needed */
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
+    <button class="top-left-button"><a href="./index.html">Home</a></button>
     <h1>Contact</h1>
     <ul>
-        <h4>Mob: +91963363042</h4>
-        <li>
-            <h3>Home Address</h3>
+        <li class="contact-item">
+            <a href="tel:+91963363042">
+                <img src="./mobile (2).png" alt="dialer logo" class="whatsapp-logo">
+            +91963363042</a>
         </li>
-        <p>Muhammed Sadik <br>
-        Kaniyath House. <br>
-        Kozhihena <br>
-        Valakkulam PO. <br>
-        Malappuram Dist. <br>
-        Kerala <br>
-        India <br>
-        PIN: 676508
-    </p>
+        <li class="contact-item">   
+            <a href="https://api.whatsapp.com/send?phone=" target="_blank">
+                <img src="./whatsapp.png" alt="WhatsApp Logo" class="whatsapp-logo">
+                +91963363042
+            </a>
+            <li class="contact-item">
+                <a href="https://www.instagram.com/sadik_kaniyath?igsh=ZGxwdTA1czExYzZ3" target="_blank">
+                    <img src="./instagram (1).png" alt="instagram Logo" class="whatsapp-logo">
+                    sadik_kaniyath
+                </a>
     </ul>
-    
-    
+
+    <script src="path/to/your/custom.js"></script>
 </body>
 </html>
